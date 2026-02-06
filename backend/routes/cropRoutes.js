@@ -15,4 +15,17 @@ router.get("/:userId", async (req, res) => {
   res.json(crops);
 });
 
+// DELETE crop by ID
+router.delete("/:id", async (req, res) => {
+  try {
+    await Crop.findByIdAndDelete(req.params.id);
+    res.json({ message: "Record deleted successfully" });
+  } catch (err) {
+    res.status(500).json({ message: "Delete failed" });
+  }
+});
+
+
+
+
 module.exports = router;
