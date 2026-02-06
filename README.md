@@ -17,9 +17,61 @@ authentication mechanisms, environment configuration, Git version control, and d
 It reflects a complete end-to-end web application workflow from backend architecture to frontend usability and database integration.
 
 Technologies Used:
+
 Front End:
-HTML, CSS, JavaScript
+HTML, CSS, JavaScript.
 Back End:
-Node.js and Express.js
+Node.js and Express.js.
 Data Base:
-MongoDB Atlas
+MongoDB Atlas.
+
+How to Run the Project:
+
+Clone the repository:
+
+git clone https://github.com/khyathisriruddaraju/farmer-dashboard
+
+
+Backend setup:
+
+cd backend
+npm install
+npm run dev
+
+
+Frontend setup:
+
+cd frontend
+npm install
+npm start
+
+
+Make sure to create a .env file in the backend folder with your MongoDB connection string before running the server.
+
+API Endpoints
+
+POST /api/auth/register – Register new user
+
+POST /api/auth/login – Login user
+
+GET /api/users – Fetch all users
+
+POST /api/users – Add new user
+
+PUT /api/users/:id – Update user
+
+DELETE /api/users/:id – Delete user
+
+Database Schema:
+
+User Collection
+
+name
+
+email
+
+password
+
+GitHub Repository:https://github.com/khyathisriruddaraju/farmer-dashboard
+
+
